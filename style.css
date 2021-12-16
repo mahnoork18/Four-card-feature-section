@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Outfit:wght@300;400;600&family=Poppins:wght@200;400;600&display=swap');
+:root{
+    
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+*::before*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+	min-width: 375px;
+height: 100vh;    
+    background: var(--Very-Light-Gray);
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.content{
+    margin-top: 10px;
+    text-align: center;
+    max-width: 450px;
+    color: var(--Grayish-Blue);
+    font-size:1.2rem;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.content p{
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+}
+span{
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+}
+.services {
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 10px;
+	gap: 4em;
+}
+.services > * {
+	flex-basis: 100%;
+}
+.services-middle {
+	display: flex;
+	flex-direction: column;
+	gap: 5em;
+}
+.card-box {
+	min-height: 14em;
+	padding: 1.5em;
+	box-shadow: 0px 10px 30px -20px var(--Very-Dark-Blue);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.cyan{
+    border-top: 5px solid var(--Cyan);
+}
+.red{
+  border-top: 5px solid var(--Red);
+}
+.blue{
+  border-top: 5px solid var(--Blue);
+}
+.orange{
+  border-top: 5px solid var(--Orange);
+}
+
+.card-title {
+	font-size: 1.2em;
+	color: var(--Very-Dark-Blue);
+}
+
+.card-text {
+	font-size: 0.7em;
+	color: var(--Grayish-Blue);
+    font-weight: 400;
+	margin-bottom: 0.5em;
+}
+
+.card-icon {
+    display: flex;
+   justify-content: flex-end;
+}
+
+
+@media (max-width: 769px) {
+    body,html {
+        overflow-x:hidden;
+       scroll-behavior: smooth;
+      }
+	.services {
+		flex-direction: column;
+	}
+
+    .wrapper{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      
+       
+    }
+ 
+    .content{
+        max-width: 300px;
+        font-size: 0.8rem;
+    }
+}
